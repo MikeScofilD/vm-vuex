@@ -14,7 +14,7 @@ export default {
     },
     incrementAsync() {},
   },
-  //Action для работы с async кодом {methods}
+  //Action для работы с async кодом (fetch axios){methods}
   actions: {
     incrementAsync({ commit }, payload) {
       // incrementAsync(context, payload) {
