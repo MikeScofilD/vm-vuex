@@ -3,7 +3,7 @@ export default {
   state() {
     return { counter: 0 };
   },
-  //Мутации должны быть полностью синхронные
+  //Мутации должны быть полностью синхронные {methods}
   mutations: {
     increment(state) {
       state.counter++;
@@ -14,7 +14,7 @@ export default {
     },
     incrementAsync() {},
   },
-  //Action для работы с async кодом
+  //Action для работы с async кодом {methods}
   actions: {
     incrementAsync({ commit }, payload) {
       // incrementAsync(context, payload) {
@@ -32,7 +32,7 @@ export default {
       }, 150);
     },
   },
-  //то что выводится в шаблон
+  //то что выводится в шаблон {computed}
   getters: {
     counter(state) {
       if (state.counter > 30) {
