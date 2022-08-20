@@ -15,6 +15,7 @@ export default {
     incrementAsync() {},
   },
   //Action для работы с async кодом (fetch axios){methods}
+  //Action -> Mutation -> State
   actions: {
     incrementAsync({ commit }, payload) {
       // incrementAsync(context, payload) {
@@ -32,7 +33,7 @@ export default {
       }, 150);
     },
   },
-  //то что выводится в шаблон {computed}
+  //Получение данных из state то что выводится в шаблон {computed}
   getters: {
     counter(state) {
       if (state.counter > 30) {
